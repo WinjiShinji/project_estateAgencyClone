@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Estate Agency Clone</title>
+</head>
+<body>
+  <div class="master_container">
+    <!-- NavBar Start -->
+    <nav class="navbar_container nav">
+      <div class="navbar_menu hamburger">
+        <img 
+          class="hamburger"
+          src="./public/menu_lines_hamburger_icon.png" alt="">
+      </div>
+      <div class="logo nav">
+        <h1 class="nav">moveRight</h1>
+        <img class="nav" src="./public/home_logo.png" alt="">
+      </div>
+      <!-- Sign In Alternate -->
+      <div class="sign_in_alt nav">
+        <img class="nav sign_in_alt_event" src="./public/user.png" alt="">
+        <p class="nav sign_in_alt_event">Sign in</p>
+      </div>
+
+      <!-- NavBar Links -->
+      <div class="nav_bg nav"></div>
+      <div class="nav_links nav">
+        <!-- Buy -->
+        <a class="nav nav_link" href="">Buy</a>
+        <ul class="nav_item nav">
+          <a href="" class="nav">Property for sale</a>
+          <a href="" class="nav">New homes for sale</a>
+          <a href="" class="nav">Where can I live</a>
+          <a href="" class="nav">Property valuation</a>
+          <a href="" class="nav">Investors</a>
+          <a href="" class="nav">Mortgages</a>
+        </ul>
+        <!-- Rent -->
+        <a class="nav nav_link" href="">Rent</a>
+        <ul class="nav_item nav">
+          <a href="" class="nav">Property to rent</a>
+          <a href="" class="nav">Student property to rent</a>
+          <a href="" class="nav">Where can I live</a>
+        </ul>
+        <!-- Prices -->
+        <a class="nav nav_link" href="">House Prices</a>
+        <ul class="nav_item nav">
+          <a href="" class="nav">Sold house prices</a>
+          <a href="" class="nav">Property valuation</a>
+          <a href="" class="nav">Price comparison report</a>
+          <a href="" class="nav">Market trends</a>
+        </ul>
+        <!-- Agent -->
+        <a class="nav nav_link" href="">Find Agent</a>
+        <ul class="nav_item nav">
+          <a href="" class="nav">Find estate agents</a>
+        </ul>
+        <!-- Commercial -->
+        <a class="nav nav_link" href="">Commercial</a>
+        <ul class="nav_item nav">
+          <a href="" class="nav">Commercial property to rent</a>
+          <a href="" class="nav">Commercial property for sale</a>
+          <a href="" class="nav">Advertise commercial property</a>
+        </ul>
+        <!-- Inspire -->
+        <a class="nav nav_link" href="">Inspire</a>
+        <ul class="nav_item nav">
+          <a href="" class="nav">Moving stories</a>
+          <a href="" class="nav">Property blog</a>
+          <a href="" class="nav">View our latest campaign</a>
+          <a href="" class="nav">Property guides</a>
+          <a href="" class="nav">Housing trends</a>
+          <a href="" class="nav">Overseas blog</a>
+          <a href="" class="nav">Country guides</a>
+        </ul>
+        <!-- Overseas -->
+        <a class="nav nav_link" href="">Overseas</a>
+        <ul class="nav_item nav">
+          <a href="" class="nav">All countries</a>
+          <a href="" class="nav">Spain</a>
+          <a href="" class="nav">France</a>
+          <a href="" class="nav">Portugal</a>
+          <a href="" class="nav">Italy</a>
+          <a href="" class="nav">Greece</a>
+          <a href="" class="nav">Currency</a>
+          <a href="" class="nav">Sell overseas property</a>
+        </ul>
+      </div>
+      <!-- Sign In -->
+      <div class="sign_in sign_in_event nav">
+        <img 
+          class="sign_in_event nav"
+          src="./public/user.png" alt="sign in">
+        <div class="sign_in_event nav">Sign in</div>
+      </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal_bg"></div>
+    <!-- Sign In Menu -->
+    <div class="sign_in_menu">
+      <img 
+        class="sign_in_close"
+        src="./public/carosel/close.svg" alt="">
+      <!-- Sign In Top -->
+      <div class="sign_in_top">
+        <div class="logo">
+          <h1>moveRight</h1>
+          <img src="./public/home_logo.png" alt="">
+        </div>
+      </div>
+      <!-- Sign In Mode -->
+      <div class="sign_in_mode">
+        <p class="sign_in_create">Create an account</p>
+        <p class="sign_in_signin active">Sign in</p>
+      </div>
+      <!-- Sign In Middle -->
+      <div class="sign_in_middle active">
+        <h4>Welcome back!</h4>
+        <form action="submit">
+          <label for="email_signin">Email address</label>
+          <input type="email" id="email_signin" required>
+          <label for="password_signin">Password</label>
+          <input type="password" id="password_signin" required>
+          <a href="/">Forgotten your password?</a>
+          <div>
+            <input type="checkbox" id="signedin">
+            <label for="signedin">Stay signed in</label>
+          </div>
+          <button>Sign in</button>
+        </div>
+      </form>
+      <!-- Create Account Middle -->
+      <div class="create_menu_middle ">
+        <h4>Let's get started!</h4>
+        <form action="submit">
+          <label for="first_name_create">First name</label>
+          <input type="text" id="first_name_create" required>
+          <label for="last_name_create">Last name</label>
+          <input type="text" id="last_name_create" required>
+          <label for="post_code_create">Postcode</label>
+          <input type="text" id="post_code_create" placeholder="Optional">
+          <label for="email_create">Email address</label>
+          <input type="email" id="email_create" required>
+          <label for="password_create">Password</label>
+          <input type="password" id="password_create" required>
+          <ul>
+            <li>Uppercase letter</li>
+            <li>Number</li>
+            <li>10 characters or more</li>
+          </ul>
+          <div>
+            <input type="checkbox" id="signedin_alt">
+            <label for="signedin_alt">Stay signed in</label>
+          </div>
+          <button>Create an account</button>
+        </form>
+        <p>
+          By clicking create account you confirm that you agree to our website terms of use
+          , our privacy policy and consent to cookies being stored on your device.
+        </p>
+      </div>
+      <!-- Sign In Bottom -->
+      <div class="sign_in_bottom">
+      </div>
+    </div>
+    <!-- NavBar End -->
+    <!-- TopBar Start -->
+    <div class="topbar_container nav">
+      <!-- TopBar Search -->
+      <div class="topbar_search  nav">
+        <input class="nav" type="text" placeholder="Balcolme Station">
+        <img class="nav" src="./public/cancel.png" alt="">
+        <select class="nav" name="distance" id="distance">
+          <option value="0.5" selected>1/2 mile</option>
+          <option value="1">1 mile</option>
+          <option value="3">3 miles</option>
+          <option value="5">5 miles</option>
+          <option value="10">10 miles</option>
+          <option value="20">20 miles</option>
+          <option value="30">30 miles</option>
+          <option value="40">40 miles</option>
+          <option value="50">50 miles</option>
+          <option value="100">100 miles</option>
+        </select>
+      </div>
+      <!-- TopBar Price -->
+      <div class="topbar_price nav">
+        <select class="nav" name="min_price" id="min_price">
+          <option value="0" selected>Min Price</option>
+          <option value="50000">£50,000</option>
+          <option value="80000">£80,000</option>
+          <option value="100000">£100,000</option>
+          <option value="150000">£150,000</option>
+          <option value="200000">£200,000</option>
+          <option value="300000">£300,000</option>
+          <option value="400000">£400,000</option>
+          <option value="500000">£500,000</option>
+          <option value="600000">£600,000</option>
+          <option value="700000">£700,000</option>
+          <option value="800000">£800,000</option>
+          <option value="900000">£900,000</option>
+          <option value="1000000">£1,000,000</option>
+          <option value="100000000">Max Price</option>
+        </select>
+        <div class="nav">to</div>
+        <select class="nav" name="max_price" id="max_price">
+          <option value="100000000" selected>Max Price</option>
+          <option value="50000">£50,000</option>
+          <option value="80000">£80,000</option>
+          <option value="100000">£100,000</option>
+          <option value="150000">£150,000</option>
+          <option value="200000">£200,000</option>
+          <option value="300000">£300,000</option>
+          <option value="400000">£400,000</option>
+          <option value="500000">£500,000</option>
+          <option value="600000">£600,000</option>
+          <option value="700000">£700,000</option>
+          <option value="800000">£800,000</option>
+          <option value="900000">£900,000</option>
+          <option value="1000000">£1,000,000</option>
+          <option value="100000000">Max Price</option>
+        </select>
+      </div>
+      <!-- TopBar Beds -->
+      <div class="topbar_beds nav">
+        <select class="nav" name="min_beds" id="min_beds">
+          <option value="0" selected>Min Beds</option>
+          <option value="0">Studio</option>
+          <option value="1">1 Bed</option>
+          <option value="2">2 Bed</option>
+          <option value="3">3 Bed</option>
+          <option value="4">4 Bed</option>
+          <option value="5">5 Bed</option>
+          <option value="6">6 Bed</option>
+          <option value="7">7 Bed</option>
+          <option value="8">8 Bed</option>
+          <option value="1000">Max Beds</option>
+        </select>
+        <div class="nav">to</div>
+        <select class="nav" name="max_beds" id="max_beds">
+          <option value="1000" selected>Max Beds</option>
+          <option value="0">Studio</option>
+          <option value="1">1 Bed</option>
+          <option value="2">2 Bed</option>
+          <option value="3">3 Bed</option>
+          <option value="4">4 Bed</option>
+          <option value="5">5 Bed</option>
+          <option value="6">6 Bed</option>
+          <option value="7">7 Bed</option>
+          <option value="8">8 Bed</option>
+          <option value="1000">Max Beds</option>
+        </select>
+      </div>
+      <!-- TopBar Type -->
+      <div class="topbar_type nav">Property Type</div>
+      <div class="topbar_property_bg">
+        <div class="topbar_property_icons">
+          <div class="topbar_property_icon">
+            <img src="./public/home.png" alt="">
+            <p>Detached</p>
+          </div>
+          <div class="topbar_property_icon">
+            <img src="./public/home2.png" alt="">
+            <p>Semi Detached</p>
+          </div>
+          <div class="topbar_property_icon">
+            <img src="./public/home3.png" alt="">
+            <p>Terraced</p>
+          </div>
+          <div class="topbar_property_icon">
+            <img src="./public/apartment.png" alt="">
+            <p>Flat</p>
+          </div>
+          <div class="topbar_property_icon">
+            <img src="./public/home4.png" alt="">
+            <p>Bungalow</p>
+          </div>
+          <div class="topbar_property_icon">
+            <img src="./public/landscape.png" alt="">
+            <p>Land</p>
+          </div>
+          <div class="topbar_property_icon">
+            <img src="./public/cabin.png" alt="">
+            <p>Park Home</p>
+          </div>
+        </div>
+        <div class="topbar_property_bottom">
+          <p><span>616</span>results</p>
+          <button class="topbar_property_button">Done</button>
+        </div>
+      </div>
+      <!-- TopBar Filter -->
+      <div class="topbar_filter nav">Filters</div>
+      <div class="topbar_filter_alt">Filters</div>
+      <div class="topbar_filter_bg">
+        <div class="topbar_filter_added">
+          <div>
+            <p>Added to site:</p>
+            <select name="filter_age" id="filter_age">
+              <option value="10000" selected>Anytime</option>
+              <option value="1" >last 24 hours</option>
+              <option value="3" >last 3 days</option>
+              <option value="7" >last 7 days</option>
+              <option value="14" >last 14 days</option>
+            </select>
+          </div>
+          <input type="checkbox" value="true" id="filter_special">
+          <label for="filter_special">Include Under Offer, Sold STC...</label>
+          <img src="./public/help.png" alt="">
+        </div>
+
+        <div class="topbar_filter_filters">
+          <div class="topbar_filter_left">
+            <p>Must Haves:</p>
+            <div>
+              <button class="top_filter_btn">Garden</button>
+              <button class="top_filter_btn">Parking</button>
+              <button class="top_filter_btn">New Home</button>
+              <button class="top_filter_btn">Retirement Home</button>
+              <button class="top_filter_btn">Buying Schemes</button>
+              <button class="top_filter_btn">Auction Property</button>
+            </div>
+          </div>
+          
+          <div class="topbar_filter_right">
+            <p>Don't Show:</p>
+            <div>
+              <button class="top_filter_btn">New Home</button>
+              <button class="top_filter_btn">Retirement Home</button>
+              <button class="top_filter_btn">Buying Schemes</button>
+            </div>
+          </div>
+        </div>
+          
+          <div class="topbar_filter_bottom">
+            <button>Clear</button>
+            <p><span>616</span>results</p>
+            <button class="topbar_filter_button">Done</button>
+          </div>
+        </div>
+        
+      </div>
+    <!-- TopBar End -->
+    <!-- Top Content Bar Start -->
+    <div class="top_content_bar">
+      <p>
+        Properties For Sale near <span>Balcolme Station, West Haywards, Cornwall</span>, 
+        within <span>5 miles</span>, at least <span>£80,000</span>.
+      </p>
+      <div>
+        <img src="./public/star.png" alt="Save Search">
+        <p>Save Search</p>
+      </div>
+      <div>
+        <img src="./public/notifications.png" alt="Create Alert">
+        <p>Create Alert</p>
+      </div>
+      
+    </div>
+    <!-- Top Content Bar End -->
+    <!-- Main Content Start -->
+    <main class="main_content_container">
+      <!-- Main Content Top -->
+      <div class="main_content_top">
+        <div><span>616</span> results</div>
+        <div>Sort: </div>
+        <select name="sort_price" id="sort_price">
+          <option value="max_price" selected>Highest Price</option>
+          <option value="min_price">Lowest Price</option>
+          <option value="age_new">Newest Listed</option>
+          <option value="age_old">Oldest Listed</option>
+          <option value="distance_close">Nearest First</option>
+        </select>
+        <div class="top_list_filter current">
+          <img src="./public/view_list.png" alt="">
+          <div>List</div>
+        </div>
+        <div class="top_map_filter">
+          <img src="./public/location.png" alt="">
+          <div>Map</div>
+        </div>
+      </div>
+      <!-- Main Content Body -->
+      <div class="main_content_body">
+        <div class="main_content_keywords">
+          <img src="./public/filter_list.png" alt="">
+          <p>Prioritize properties with... </p>
+          <div>
+            <div class="main_content_keyword">
+              <img src="./public/add.png" alt="">
+              <p>Add keyword</p>
+            </div>
+          </div>
+        </div>
+        <!-- !! Property-Cards-Here !! -->
+        
+        <div class="property_card_container">
+          <!-- Card Left -->
+          <div class="property_card_left">
+            <div class="property_overlay">
+              <img src="./public/room.png" alt="">
+              <img src="./public/photo.png" alt="">
+              <p>1/12</p>
+            </div>
+            <div class="property_card_carousel">
+              <img class="carousel_left" src="./public/carosel/chevron-left.svg" alt="">              
+              <img class="carousel_right" src="./public/carosel/chevron-right.svg" alt="">              
+              <!-- Property Pictures -->
+              <div class="carousel_main">
+                <img src="./public/property/pexels-alex-staudinger-1732414.jpg" alt="">
+              </div>
+              <div class="carousel_center">
+                <div class="carousel_center_top">
+                  <img src="./public/property/pexels-ben-mack-6775268.jpg" alt="">
+                </div>
+                <div class="carousel_center_middle">
+                  <img src=".//public/property/pexels-binyamin-mellish-186077.jpg" alt="">
+                </div>
+                <div class="carousel_center_bottom">
+                  <img src="./public/property/pexels-foteros-783745.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="property_card_bottom">
+              <div class="property_price">£3,250,000</div>
+              <p>
+                Guide Price
+              </p>
+            </div>
+            <div class="property_card_bottom_extra">
+              <p>
+                Premium Listing
+              </p>
+            </div>
+          </div>
+          <!-- Card Right -->
+          <div class="property_card_right">
+            <div class="card_address">
+              Turners Road, Down Hill, Crawsley, Sussex, ...
+            </div>
+            <img src="./public/carosel/close.svg" alt="">
+            <div class="card_details">
+              Detached
+              <img src="./public/bed.png" alt="">
+              <span class="property_beds">4</span>
+              <img src="./public/bathtub.png" alt="">
+              <span class="property_bathrooms">5</span>
+            </div>
+            <div class="card_distance">
+              <span class="station_distance">4.99 </span>
+              miles from station
+            </div>
+            <div class="card_description">
+              Placeholder 
+              Card description. 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Voluptate eaque unde error porro quaerat odit pariatur tempora dignissimos, 
+              itaque molestiae?
+            </div>
+            <div class="card_added">
+              Added on <span class="property_date">19/01/2023 </span>
+              by <span class="agent_name">Example Properties </span>.
+            </div>
+            <div class="card_agent_info">
+              <img src="./public/examplepropertieslogo.png" alt="">
+              <div class="agent_phone">
+                <span>01222 483075</span> 
+                <span>Local call rate</span>
+              </div>
+              <div class="agent_email">
+                <img src="./public/mail.png" alt="">
+                <span>Contact</span>
+              </div>
+              <div class="card_save">
+                <img src="./public/favorite_empty.png" alt="">
+                <span>Save</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- !! Property-Cards-End !! -->
+      </div>
+      <!-- Main Side Content -->
+      <div class="main_side_content">
+        <div class="map_side">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.72810626638!2d-0.2416817958065267!3d51.528771840991865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!5e0!3m2!1sen!2suk!4v1678434287315!5m2!1sen!2suk" 
+            width="350" 
+            height="350" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+      <!-- Main Content Bottom -->
+      <div class="main_content_bottom">
+        <div class="page_prev">
+          <img src="./public/arrow_left.png" alt="">
+          <p>Previous</p>
+        </div>
+        <div class="page_current">
+          <p>Page</p>
+          <select name="page_number" id="page_number">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <p>of <span id="page_total">26</span></p>
+        </div>
+        <div class="page_next">
+          <p>Next</p>
+          <img src="./public/arrow_right.png" alt="">
+        </div>
+      </div>
+    </main>
+    <!-- Main Content End -->
+    <!-- Footer Start -->
+    <footer class="footer_container">
+      <!-- Footer Links -->
+      <div class="footer_links">
+        <ul>
+          <li><a href="/">Rightmove</a></li>
+          <li><a href="/">Search for sale</a></li>
+          <li><a href="/">Search for rent</a></li>
+          <li><a href="/">Commercial for sale</a></li>
+          <li><a href="/">Commercial for rent</a></li>
+          <li><a href="/">Search sold prices</a></li>
+          <li><a href="/">Sign in / Create account</a></li>
+          <li><a href="/">Blog</a></li>
+          <li><a href="/">Tech blog</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="/">Resources</a></li>
+          <li><a href="/">Stamp duty</a></li>
+          <li><a href="/">Students</a></li>
+          <li><a href="/">Removals</a></li>
+          <li><a href="/">Property guides</a></li>
+          <li><a href="/">House price index</a></li>
+          <li><a href="/">Help to buy</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="/">Quick links</a></li>
+          <li><a href="/">Cheap flats to rent</a></li>
+          <li><a href="/">Property investment</a></li>
+          <li><a href="/">Cheap houses for sale</a></li>
+          <li><a href="/">Overseas</a></li>
+          <li><a href="/">Find an agent</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="/">Rightmove PLC</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Press Centre</a></li>
+          <li><a href="/">Investor relations</a></li>
+          <li><a href="/">Contact us</a></li>
+          <li><a href="/">Careers</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="/">Locations</a></li>
+          <li><a href="/">England</a></li>
+          <li><a href="/">Scotland</a></li>
+          <li><a href="/">Northern Ireland</a></li>
+          <li><a href="/">Wales</a></li>
+          <li><a href="/">London</a></li>
+          <li><a href="/">All countries</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="/">Professional</a></li>
+          <button>Rightmove Plus</button>
+          <li><a href="/">Data Services</a></li>
+          <li><a href="/">Advertise with us</a></li>
+          <li><a href="/">Overseas Agents and Developers</a></li>
+          <li><a href="/">Home and Property Related Services</a></li>
+          <li><a href="/">Advertise commercial property</a></li>
+        </ul>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="footer_bottom">
+        <p>
+          Major cities and towns in the UK:
+        </p>
+        <select name="footer_post_codes" id="footer_post_codes">
+          <option value="a">a</option>
+          <option value="b">b</option>
+          <option value="c">c</option>
+          <option value="d">d</option>
+          <option value="e">e</option>
+          <option value="f">f</option>
+          <option value="g">g</option>
+          <option value="h">h</option>
+          <option value="i">i</option>
+          <option value="j">j</option>
+          <option value="k">k</option>
+          <option value="l">l</option>
+          <option value="m">m</option>
+          <option value="n">n</option>
+          <option value="o">o</option>
+          <option value="p">p</option>
+          <option value="q">q</option>
+          <option value="r">r</option>
+          <option value="s">s</option>
+          <option value="t">t</option>
+          <option value="u">u</option>
+          <option value="v">v</option>
+          <option value="w">w</option>
+          <option value="x">x</option>
+          <option value="y">y</option>
+          <option value="z">z</option>
+        </select>
+        <div>
+          <p>This site:</p>
+          <a href="/">Site map</a>
+          <a href="/">Help</a>
+          <a href="/">Cookies</a>
+          <a href="/">Safety and security</a>
+          <a href="/">Terms of Use</a>
+          <a href="/">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+  </div>
+  <script src="./index.js"></script>
+  <script src="./property.js" type="module"></script>
+
+</body>
+</html>

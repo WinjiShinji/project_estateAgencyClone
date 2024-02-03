@@ -1,0 +1,77 @@
+
+{
+  "propertyInfo" : [
+    { 
+      "date" : "24-01-2022",
+      "price" : "200000",
+      "address" : "1 Hill Lane, Mill Top",
+      "city" : "Oxford",
+      "postcode" : "OX12 3BC",
+      "type" : "semi-detached",
+      "beds" : "4",
+      "bathrooms" : "3",
+      "keywords" : [
+        "new", "parking"
+      ],
+      "distance" : "2.33"
+    },
+    {
+      "date" : "11-01-2022",
+      "price" : "300000",
+      "address" : "5 Old Tree, Lands End",
+      "city" : "Oxford",
+      "postcode" : "OX67 6JK",
+      "type" : "bungalow",
+      "beds" : "5",
+      "bathrooms" : "2",
+      "keywords" : [
+        "garden", "auction"
+      ],
+      "distance" : "5.33"
+    },
+    {
+      "date" : "11-03-2022",
+      "price" : "500000",
+      "address" : "White Chapel, West Field",
+      "city" : "Oxford",
+      "postcode" : "OX1 9LP",
+      "type" : "Apartment",
+      "beds" : "2",
+      "bathrooms" : "1",
+      "keywords" : [
+        "schemes", "auction"
+      ],
+      "distance" : "1.00"
+    }
+
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
